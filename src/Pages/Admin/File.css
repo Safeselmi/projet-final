@@ -1,0 +1,68 @@
+.foo {
+  display: block;
+  position: relative;
+  width: 300px;
+  margin: auto;
+  cursor: pointer;
+  border: 0;
+  height: 60px;
+  border-radius: 5px;
+  outline: 0;
+}
+
+.foo:after {
+  transition: 200ms all ease;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+  background: #a9cce3;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150%;
+  display: block;
+  content: "Image ";
+  line-height: 60px;
+  border-radius: 5px;
+}
+
+button {
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #a9cce3;
+
+  color: #eeeeee;
+  text-align: center;
+  font-size: 15px;
+  padding: 4px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+button:hover {
+  background-color: #a9cce3;
+}
+button:hover span {
+  padding-right: 8px;
+}
+button:hover span:after {
+  opacity: 1;
+  right: 0;
+}

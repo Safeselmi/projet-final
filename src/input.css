@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "FredokaBold";
+    src: url("Assets/fonts/FredokaBold.ttf") format("TrueType");
+  }
+  @font-face {
+    font-family: "Fredoka_Expanded_Bold";
+    src: url("Assets/fonts/Fredoka_Expanded_Bold.ttf") format("TrueType");
+  }
+  @font-face {
+    font-family: "fredmid";
+    src: url("Assets/fonts/fredmid.ttf") format("TrueType");
+  }
+}
